@@ -1,0 +1,61 @@
+<!-- This is a note 
+Robert Vets
+Feb 21, 2015
+CodeFellows C26
+Homework 5
+Build a Website for your Javascript Race 
+Add jQuery functionality to make it groovy
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>TrafficGroundZero</title>
+	<link href = "css/styles.css" type = "text/css" rel = "stylesheet" />
+	</head>
+
+	<body>
+		<header>
+			<h1> Lead-Follow Lapping Traffic </h1>
+		</header>
+		<section id = "intro">
+			<h2 id = "introLead">What the model does...</h2>
+			<p>The road is 20 miles long and cars randomly start their travel. The speed of the cars varies from but cars need to slow as they approach a slower car.</p>
+			<p>The average speed for cars that complete their trip is reported.</p>
+			<p id="introBtn"> 
+			<button class = "doBtn" id="launchBttn" >Click to Continue</button>
+			</p>
+		</section>
+
+		<section id='selectionstuff'>
+			<img id='flags' src='images/flags.png' />			
+			<p>Select the amount of traffic
+				<br/>
+				<form id='selection'>
+					<input type='radio' name='rate' value='.1' checked='checked'> Heavy
+					<input type='radio' name='rate' value='.5'> Medium
+					<input type='radio' name='rate' value='.9'> Light
+				</form>
+				<button class='doBtn' id="launchBttn2" >Click to Launch </button>
+		</section>
+
+		<section id='results'>		
+			<table align="center">
+				<th>Simulation Results</th>
+			<tr>
+				<td>Number of Cars</td>
+				<td id='carsResults'> -- </td>
+			</tr>
+			<tr>
+				<td>Average Speed</td>
+				<td id='speedResults'> -- </td>
+			</tr>
+			</table>
+		</section>
+
+		<script src="js/jquery-1.11.2.min.js"></script>
+	  <script type="text/javascript" src="js/traffic.js"></script>
+		<script type="text/javascript" src="js/moves.js"></script>
+
+	</body>
+</html>
